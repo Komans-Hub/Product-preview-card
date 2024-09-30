@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    background-color: hsl(30, 38%, 92%);
+    text-wrap: wrap;
+    
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-container img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+   
+}
+img, div {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+.product {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: hwb(228 42% 46%);
+}
+h1 {
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 0.9;
+    margin-top: 10px;
+}
+p {
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    line-height: 1.4;
+}
+h1, p {
+    margin-bottom: 5px;
+}
+h2 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.current-price {
+    color: hsl(158, 36%, 37%);  
+    display: flex;
+    gap: 1.5em;
+    margin-bottom: -10px;
+}
+.original-price {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    justify-items: center;
+    align-self: center;
+}
+h3 {
+    color: hsl(0, 0%, 100%);
+}
+footer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border: 1px solid hsl(158, 36%, 37%);
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+}
+
+
+.montserrat-container {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+footer:hover {
+    cursor: pointer;
+}
+@media (min-width: 600px) {
+   body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   }
+   .main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+   }
+   .image {
+    width: 250px;
+    max-width: 100%;
+    min-height: 420px;
+   }
+   .main-container img {
+    max-width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+   .container {
+    border-radius: 0 10px 10px 0;
+    width: 250px;
+    max-width: 100%;
+    min-height: 350px;
+   }
+}
